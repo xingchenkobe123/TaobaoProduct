@@ -13,7 +13,7 @@ from urllib.parse import quote
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
-browser = webdriver.Chrome(chrome_options=chrome_options)
+browser = webdriver.Chrome(options=chrome_options)
 
 wait = WebDriverWait(browser, 30)
 '''建议设置时长30s以上'''
